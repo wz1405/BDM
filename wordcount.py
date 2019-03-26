@@ -1,4 +1,5 @@
-if __name__ == '__name__':
+from pyspark import SparkContext
+if __name__ == '__main__':
     sc = sparkContext()
     result = sc.textFile('book.txt') \
     .flatMap(lambda x: x.split()) \
